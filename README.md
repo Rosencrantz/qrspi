@@ -45,11 +45,11 @@ git clone https://github.com/matanshavit/qrspi /tmp/qrspi
 
 # Copy commands
 mkdir -p .claude/commands/qrspi
-cp /tmp/qrspi/.claude/commands/qrspi/*.md .claude/commands/qrspi/
+cp /tmp/.claude/commands/*.md .claude/commands/
 
 # Copy required agents
 mkdir -p .claude/agents
-cp /tmp/qrspi/.claude/agents/*.md .claude/agents/
+cp /tmp/.claude/agents/*.md .claude/agents/
 
 # Clean up
 rm -rf /tmp/qrspi
@@ -57,32 +57,32 @@ rm -rf /tmp/qrspi
 
 ### Manual install
 
-1. Copy the contents of `.claude/commands/qrspi/` into your project's `.claude/commands/qrspi/`
+1. Copy the contents of `.claude/commands/` into your project's `.claude/commands/`
 2. Copy the contents of `.claude/agents/` into your project's `.claude/agents/`
 3. Both directories must exist at the root of your project
 
 ### Verify installation
 
-Open Claude Code in your project and type `/qrspi/` — you should see all 8 commands in autocomplete.
+Open Claude Code in your project and type `/` — you should see all 8 commands in autocomplete.
 
 ## Usage
 
 ```bash
 # Start with a task description, ticket file, or issue
-/qrspi/1_question "Add rate limiting to the API endpoints"
+/question "Add rate limiting to the API endpoints"
 
 # Each command tells you what to run next
-/qrspi/2_research thoughts/qrspi/2026-03-29-rate-limiting/
-/qrspi/3_design thoughts/qrspi/2026-03-29-rate-limiting/
-/qrspi/4_structure thoughts/qrspi/2026-03-29-rate-limiting/
-/qrspi/5_plan thoughts/qrspi/2026-03-29-rate-limiting/
+/research worklog/2026-03-29-rate-limiting/
+/design worklog/2026-03-29-rate-limiting/
+/structure worklog/2026-03-29-rate-limiting/
+/plan worklog/2026-03-29-rate-limiting/
 
 # Optional: isolate work in a worktree
-/qrspi/6_worktree thoughts/qrspi/2026-03-29-rate-limiting/
+/worktree worklog/2026-03-29-rate-limiting/
 
 # Implement and ship
-/qrspi/7_implement thoughts/qrspi/2026-03-29-rate-limiting/
-/qrspi/8_pr thoughts/qrspi/2026-03-29-rate-limiting/
+/implement worklog/2026-03-29-rate-limiting/
+/pr worklog/2026-03-29-rate-limiting/
 ```
 
 Start a fresh context window between phases for best results.
@@ -91,8 +91,8 @@ Start a fresh context window between phases for best results.
 
 Use it for complex, multi-file changes in existing codebases — the kind where getting the design wrong is expensive. Not every task needs all 8 phases:
 
-- **Simple bug fix**: Skip to `/qrspi/7_implement` with a hand-written plan
-- **Small feature**: Start at `/qrspi/3_design` if you already know the codebase
+- **Simple bug fix**: Skip to `/7_implement` with a hand-written plan
+- **Small feature**: Start at `/3_design` if you already know the codebase
 - **Complex feature**: Run all 8 phases
 
 If a task can be described in one sentence and touches fewer than 3 files, QRSPI is overkill.
@@ -104,7 +104,7 @@ If a task can be described in one sentence and touches fewer than 3 files, QRSPI
 All artifacts for a task live in one directory:
 
 ```
-thoughts/qrspi/<task-id>/
+worklog/<task-id>/
 ├── task.md         # What we're building (hidden from Research to prevent bias)
 ├── questions.md    # Neutral research questions
 ├── research.md     # Factual findings with file:line references
@@ -162,14 +162,14 @@ All agents operate as documentarians — they describe what exists, never sugges
 │   └── web-search-researcher.md
 └── commands/
     └── qrspi/
-        ├── 1_question.md
-        ├── 2_research.md
-        ├── 3_design.md
-        ├── 4_structure.md
-        ├── 5_plan.md
-        ├── 6_worktree.md
-        ├── 7_implement.md
-        └── 8_pr.md
+        ├── question.md
+        ├── research.md
+        ├── design.md
+        ├── structure.md
+        ├── plan.md
+        ├── worktree.md
+        ├── implement.md
+        └── pr.md
 ```
 
 ## References
