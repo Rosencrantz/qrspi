@@ -1,7 +1,7 @@
 ---
 description: Tactical implementation plan — the agent's working document
 model: opus
-argument-hint: "thoughts/qrspi/<id>/"
+argument-hint: "worklog/<id>/"
 ---
 
 # Plan — Tactical Implementation Details
@@ -68,8 +68,8 @@ Read `$ARGUMENTS/structure.md`, `$ARGUMENTS/design.md`, and `$ARGUMENTS/research
 
 ## Output
 
-- File written: `thoughts/qrspi/<id>/plan.md`
-- Tell the user: "Next: run `/qrspi/6_worktree thoughts/qrspi/<id>/` to set up an isolated worktree, or `/qrspi/7_implement thoughts/qrspi/<id>/` to implement in the current tree."
+- File written: `worklog/<id>/plan.md`
+- Tell the user: "Next: run `/6_worktree worklog/<id>/` to set up an isolated worktree, or `/7_implement worklog/<id>/` to implement in the current tree."
 
 ## Rules
 
@@ -86,4 +86,4 @@ Read `$ARGUMENTS/structure.md`, `$ARGUMENTS/design.md`, and `$ARGUMENTS/research
 
 ## When to Go Back
 
-If expanding the structure reveals that a phase can't be implemented as outlined — missing information, incorrect assumptions, or a structural issue — tell the user and suggest re-running `/qrspi/4_structure` or `/qrspi/3_design` rather than writing a plan you know is flawed.
+If expanding the structure reveals that a phase can't be implemented as outlined — missing information, incorrect assumptions, or a structural issue — tell the user and suggest re-running `/4_structure` or `/3_design` rather than writing a plan you know is flawed.

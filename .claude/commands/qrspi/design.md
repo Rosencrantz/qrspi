@@ -1,7 +1,7 @@
 ---
 description: Design discussion — align on where we are going before planning how
 model: opus
-argument-hint: "thoughts/qrspi/<id>/"
+argument-hint: "worklog/<id>/"
 ---
 
 # Design — Where Are We Going?
@@ -69,8 +69,8 @@ Read `$ARGUMENTS/task.md`, `$ARGUMENTS/questions.md`, and `$ARGUMENTS/research.m
 
 ## Output
 
-- File written: `thoughts/qrspi/<id>/design.md`
-- Tell the user: "Next: run `/qrspi/4_structure thoughts/qrspi/<id>/`"
+- File written: `worklog/<id>/design.md`
+- Tell the user: "Next: run `/4_structure worklog/<id>/`"
 
 ## Rules
 
@@ -82,4 +82,4 @@ Read `$ARGUMENTS/task.md`, `$ARGUMENTS/questions.md`, and `$ARGUMENTS/research.m
 
 ## When to Go Back
 
-If the research is missing critical information needed for design decisions — the questions missed an important area of the codebase — tell the user and suggest re-running `/qrspi/1_question` and `/qrspi/2_research` to fill the gap before proceeding with an incomplete design.
+If the research is missing critical information needed for design decisions — the questions missed an important area of the codebase — tell the user and suggest re-running `/1_question` and `/2_research` to fill the gap before proceeding with an incomplete design.

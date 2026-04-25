@@ -1,6 +1,6 @@
 ---
 description: Execute the plan phase by phase with verification checkpoints
-argument-hint: "thoughts/qrspi/<id>/"
+argument-hint: "worklog/<id>/"
 ---
 
 # Implement — Execute the Plan
@@ -63,7 +63,7 @@ If you're starting fresh in a new context window:
 
 - Code changes implemented according to the plan
 - `plan.md` updated with checked verification items
-- Tell the user: "Next: run `/qrspi/8_pr thoughts/qrspi/<id>/`"
+- Tell the user: "Next: run `/pr worklog/<id>/`"
 
 ## Rules
 
@@ -78,4 +78,4 @@ If you're starting fresh in a new context window:
 
 ## When to Go Back
 
-If a phase reveals the plan is fundamentally wrong — not a small mismatch but a structural issue like a missing dependency, wrong API, or incorrect assumption about the codebase — tell the user. For small mismatches, adapt and continue. For fundamental issues, suggest re-running `/qrspi/5_plan` or even `/qrspi/3_design` with the new information rather than building on a broken foundation.
+If a phase reveals the plan is fundamentally wrong — not a small mismatch but a structural issue like a missing dependency, wrong API, or incorrect assumption about the codebase — tell the user. For small mismatches, adapt and continue. For fundamental issues, suggest re-running `/plan` or even `/design` with the new information rather than building on a broken foundation.

@@ -1,6 +1,6 @@
 ---
 description: Create an isolated git worktree for implementation
-argument-hint: "thoughts/qrspi/<id>/"
+argument-hint: "worklog/<id>/"
 ---
 
 # Worktree — Isolate the Implementation
@@ -32,7 +32,7 @@ The artifact directory is `$ARGUMENTS`.
    Plan: $ARGUMENTS/plan.md
 
    To implement, run from the worktree:
-     /qrspi/7_implement $ARGUMENTS
+     /implement $ARGUMENTS
 
    Proceed?
    ```
@@ -58,4 +58,4 @@ The artifact directory is `$ARGUMENTS`.
 
 ## When to Go Back
 
-If the plan doesn't exist yet at `$ARGUMENTS/plan.md`, tell the user to run `/qrspi/5_plan` first.
+If the plan doesn't exist yet at `$ARGUMENTS/plan.md`, tell the user to run `/plan` first.
