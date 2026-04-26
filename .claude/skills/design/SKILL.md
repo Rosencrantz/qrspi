@@ -70,7 +70,7 @@ Read `$ARGUMENTS/task.md`, `$ARGUMENTS/questions.md`, and `$ARGUMENTS/research.m
 ## Output
 
 - File written: `worklog/<id>/design.md`
-- Tell the user: "Next: run `/4_structure worklog/<id>/`"
+- Tell the user: "Next: run `/structure worklog/<id>/`"
 
 ## Rules
 
@@ -82,4 +82,4 @@ Read `$ARGUMENTS/task.md`, `$ARGUMENTS/questions.md`, and `$ARGUMENTS/research.m
 
 ## When to Go Back
 
-If the research is missing critical information needed for design decisions — the questions missed an important area of the codebase — tell the user and suggest re-running `/1_question` and `/2_research` to fill the gap before proceeding with an incomplete design.
+If the research is missing critical information needed for design decisions — the questions missed an important area of the codebase — tell the user and suggest re-running `/question` and `/research` to fill the gap before proceeding with an incomplete design.

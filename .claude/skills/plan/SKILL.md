@@ -69,7 +69,7 @@ Read `$ARGUMENTS/structure.md`, `$ARGUMENTS/design.md`, and `$ARGUMENTS/research
 ## Output
 
 - File written: `worklog/<id>/plan.md`
-- Tell the user: "Next: run `/6_worktree worklog/<id>/` to set up an isolated worktree, or `/7_implement worklog/<id>/` to implement in the current tree."
+- Tell the user: "Next: run `/worktree worklog/<id>/` to set up an isolated worktree, or `/implement worklog/<id>/` to implement in the current tree."
 
 ## Rules
 
@@ -86,4 +86,4 @@ Read `$ARGUMENTS/structure.md`, `$ARGUMENTS/design.md`, and `$ARGUMENTS/research
 
 ## When to Go Back
 
-If expanding the structure reveals that a phase can't be implemented as outlined — missing information, incorrect assumptions, or a structural issue — tell the user and suggest re-running `/4_structure` or `/3_design` rather than writing a plan you know is flawed.
+If expanding the structure reveals that a phase can't be implemented as outlined — missing information, incorrect assumptions, or a structural issue — tell the user and suggest re-running `/structure` or `/design` rather than writing a plan you know is flawed.

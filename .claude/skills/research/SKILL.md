@@ -58,7 +58,7 @@ Read `$ARGUMENTS/questions.md`. That file is your only input.
 ## Output
 
 - File written: `worklog/<id>/research.md`
-- Tell the user: "Next: run `/3_design worklog/<id>/`"
+- Tell the user: "Next: run `/design worklog/<id>/`"
 
 ## Rules
 
@@ -72,4 +72,4 @@ Read `$ARGUMENTS/questions.md`. That file is your only input.
 
 ## When to Go Back
 
-If the questions are poorly framed — too vague, targeting the wrong areas, or missing an obvious part of the codebase — tell the user and suggest re-running `/1_question` with adjusted input rather than producing weak research.
+If the questions are poorly framed — too vague, targeting the wrong areas, or missing an obvious part of the codebase — tell the user and suggest re-running `/question` with adjusted input rather than producing weak research.

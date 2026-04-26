@@ -91,8 +91,8 @@ Start a fresh context window between phases for best results.
 
 Use it for complex, multi-file changes in existing codebases — the kind where getting the design wrong is expensive. Not every task needs all 8 phases:
 
-- **Simple bug fix**: Skip to `/7_implement` with a hand-written plan
-- **Small feature**: Start at `/3_design` if you already know the codebase
+- **Simple bug fix**: Skip to `/implement` with a hand-written plan
+- **Small feature**: Start at `/design` if you already know the codebase
 - **Complex feature**: Run all 8 phases
 
 If a task can be described in one sentence and touches fewer than 3 files, QRSPI is overkill.

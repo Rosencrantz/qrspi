@@ -71,7 +71,7 @@ Read `$ARGUMENTS/design.md` and `$ARGUMENTS/research.md`.
 ## Output
 
 - File written: `worklog/<id>/structure.md`
-- Tell the user: "Next: run `/5_plan worklog/<id>/`"
+- Tell the user: "Next: run `/plan worklog/<id>/`"
 
 ## Rules
 
@@ -83,4 +83,4 @@ Read `$ARGUMENTS/design.md` and `$ARGUMENTS/research.md`.
 
 ## When to Go Back
 
-If you discover the design missed a critical constraint or made a decision based on incorrect assumptions about the codebase, tell the user and suggest re-running `/3_design` rather than working around a flawed design.
+If you discover the design missed a critical constraint or made a decision based on incorrect assumptions about the codebase, tell the user and suggest re-running `/design` rather than working around a flawed design.
